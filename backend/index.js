@@ -10,9 +10,12 @@ app.use(cors());
 app.use(express.json());
 
 
+// connect mongodb to our node app
 mongoose
     .connect(
-        "mongoDB-URL",
+        "mongodb+srv://akhileshtakawale703:" +
+        process.env.MONGO_PASSWORD +
+        "@cluster0.47wrssa.mongodb.net/Spotify_DB?retryWrites=true&w=majority",
         {
             useNewUrlParser: true,
             useUnifiedTopology: true
