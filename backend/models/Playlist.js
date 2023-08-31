@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 // How to create a model
 // Step 1 :require mongoose
 // Step 2 :Create a mongoose schema (structure of a user)
@@ -18,13 +19,13 @@ const Playlist = new mongoose.Schema({
         ref: "User",
     },
     // 1. Playlist mein songs kaunse hain
-    // 2. Playlist collaborators
     songs: [
         {
             type: mongoose.Types.ObjectId,
             ref: "Song",
         },
     ],
+    // 2. Playlist collaborators
     collaborators: [
         {
             type: mongoose.Types.ObjectId,
