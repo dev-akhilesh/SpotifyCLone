@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Song = require("../models/Song");
 
+// Post route to create a song.
 router.post(
     "/create",
     passport.authenticate("jwt", { session: false }),
@@ -20,6 +21,17 @@ router.post(
     }
 );
 
-
+// Get route to get all songs I have published.
+router.get(
+    "/get/mysongs",
+    passport.authenticate("jwt", { session: false }),
+    async (req, res) => {
+        // We need to get all songs where artist id == currentUser._id
+        const songs = await Song.find({ artist: req.user._id }).populate(
+            "artist"
+        );
+        return res.status(200).json({ data: songs });
+    }
+);
 
 module.exports = router;
