@@ -4,12 +4,14 @@ import Login from './routes/Login';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<>homepage</>} />
-        <Route path='/login' element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="w-screen h-screen">
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<>homepage</>} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
