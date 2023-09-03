@@ -54,6 +54,7 @@ const Home = () => {
             </div>
             {/* This second div will be the right part(main content) */}
             <div className="h-full w-4/5 bg-app-black overflow-auto">
+            
             </div>
         </div>
     );
