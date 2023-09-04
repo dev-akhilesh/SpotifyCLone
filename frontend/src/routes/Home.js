@@ -1,6 +1,7 @@
-import {Icon} from "@iconify/react";
+import { Icon } from "@iconify/react";
 import spotify_logo from "../assets/images/spotify_logo_white.svg";
 import IconText from "../components/shared/IconText";
+import TextWithHover from "../components/shared/TextWithHover";
 
 
 const Home = () => {
@@ -54,7 +55,22 @@ const Home = () => {
             </div>
             {/* This second div will be the right part(main content) */}
             <div className="h-full w-4/5 bg-app-black overflow-auto">
-            
+                <div className="navbar w-full h-1/10 bg-black bg-opacity-30 flex items-center justify-end">
+                    <div className="w-1/2 flex h-full">
+                        <div className="w-3/5 flex justify-around items-center">
+                            <TextWithHover displayText={"Premium"} />
+                            <TextWithHover displayText={"Support"} />
+                            <TextWithHover displayText={"Download"} />
+                            <div className="h-1/2 border-r border-white"></div>
+                        </div>
+                        <div className="w-2/5 flex justify-around h-full items-center">
+                            <TextWithHover displayText={"Sign up"} />
+                            <div className="bg-white h-2/3 px-8 flex items-center justify-center rounded-full font-semibold cursor-pointer">
+                                Log in
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
