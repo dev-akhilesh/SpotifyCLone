@@ -7,7 +7,8 @@ import { makeUnauthenticatedPOSTRequest } from "../utils/serverHelpers";
 import { useCookies } from "react-cookie";
 
 const LoginComponent = () => {
-
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     const [cookies, setCookie] = useCookies(["token"]);
     const navigate = useNavigate();
 
