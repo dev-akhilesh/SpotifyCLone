@@ -108,6 +108,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            
             {/* This second div will be the right part(main content) */}
             <div className="h-full w-4/5 bg-app-black overflow-auto">
                 <div className="navbar w-full h-1/10 bg-black bg-opacity-30 flex items-center justify-end">
