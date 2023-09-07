@@ -1,12 +1,12 @@
-import {useState} from "react";
-import {Icon} from "@iconify/react";
+import { useState } from "react";
+import { Icon } from "@iconify/react";
 import spotify_logo from "../assets/images/spotify_logo_white.svg";
 import CloudinaryUpload from "../components/shared/CloudinaryUpload";
 import IconText from "../components/shared/IconText";
 import TextInput from "../components/shared/TextInput";
 import TextWithHover from "../components/shared/TextWithHover";
-import {makeAuthenticatedPOSTRequest} from "../utils/serverHelpers";
-import {useNavigate} from "react-router-dom";
+import { makeAuthenticatedPOSTRequest } from "../utils/serverHelpers";
+import { useNavigate } from "react-router-dom";
 
 const UploadSong = () => {
     const [name, setName] = useState("");
@@ -16,7 +16,7 @@ const UploadSong = () => {
     const navigate = useNavigate();
 
     const submitSong = async () => {
-        const data = {name, thumbnail, track: playlistUrl};
+        const data = { name, thumbnail, track: playlistUrl };
         const response = await makeAuthenticatedPOSTRequest(
             "/song/create",
             data
