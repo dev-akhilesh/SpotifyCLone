@@ -1,7 +1,7 @@
-import {Icon} from "@iconify/react";
-import {Link} from "react-router-dom";
+import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
-const IconText = ({iconName, displayText, active, targetLink, onClick}) => {
+const IconText = ({ iconName, displayText, active, targetLink, onClick }) => {
     return (
         <Link to={targetLink} className="block">
             <div
@@ -16,9 +16,8 @@ const IconText = ({iconName, displayText, active, targetLink, onClick}) => {
                     />
                 </div>
                 <div
-                    className={`${
-                        active ? "text-white" : "text-gray-400"
-                    } text-sm font-semibold hover:text-white`}
+                    className={`${active ? "text-white" : "text-gray-400"
+                        } text-sm font-semibold hover:text-white`}
                 >
                     {displayText}
                 </div>
