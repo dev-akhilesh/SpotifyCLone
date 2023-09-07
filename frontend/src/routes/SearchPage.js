@@ -1,7 +1,7 @@
-import {useState} from "react";
+import { useState } from "react";
 import LoggedInContainer from "../containers/LoggedInContainer";
-import {Icon} from "@iconify/react";
-import {makeAuthenticatedGETRequest} from "../utils/serverHelpers";
+import { Icon } from "@iconify/react";
+import { makeAuthenticatedGETRequest } from "../utils/serverHelpers";
 import SingleSongCard from "../components/shared/SingleSongCard";
 
 const SearchPage = () => {
@@ -21,9 +21,8 @@ const SearchPage = () => {
         <LoggedInContainer curActiveScreen="search">
             <div className="w-full py-6">
                 <div
-                    className={`w-1/3 p-3 text-sm rounded-full bg-gray-800 px-5 flex text-white space-x-3 items-center ${
-                        isInputFocused ? "border border-white" : ""
-                    }`}
+                    className={`w-1/3 p-3 text-sm rounded-full bg-gray-800 px-5 flex text-white space-x-3 items-center ${isInputFocused ? "border border-white" : ""
+                        }`}
                 >
                     <Icon icon="ic:outline-search" className="text-lg" />
                     <input
@@ -58,7 +57,7 @@ const SearchPage = () => {
                                 <SingleSongCard
                                     info={item}
                                     key={JSON.stringify(item)}
-                                    playSound={() => {}}
+                                    playSound={() => { }}
                                 />
                             );
                         })}
