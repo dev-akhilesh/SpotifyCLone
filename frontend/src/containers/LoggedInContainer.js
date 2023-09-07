@@ -1,15 +1,15 @@
-import {useContext, useState, useLayoutEffect, useRef} from "react";
-import {Howl, Howler} from "howler";
-import {Icon} from "@iconify/react";
+import { useContext, useState, useLayoutEffect, useRef } from "react";
+import { Howl, Howler } from "howler";
+import { Icon } from "@iconify/react";
 import spotify_logo from "../assets/images/spotify_logo_white.svg";
 import IconText from "../components/shared/IconText";
 import TextWithHover from "../components/shared/TextWithHover";
 import songContext from "../contexts/songContext";
 import CreatePlaylistModal from "../modals/CreatePlaylistModal";
 import AddToPlaylistModal from "../modals/AddToPlaylistModal";
-import {makeAuthenticatedPOSTRequest} from "../utils/serverHelpers";
+import { makeAuthenticatedPOSTRequest } from "../utils/serverHelpers";
 
-const LoggedInContainer = ({children, curActiveScreen}) => {
+const LoggedInContainer = ({ children, curActiveScreen }) => {
     const [createPlaylistModalOpen, setCreatePlaylistModalOpen] =
         useState(false);
     const [addToPlaylistModalOpen, setAddToPlaylistModalOpen] = useState(false);
@@ -42,12 +42,12 @@ const LoggedInContainer = ({children, curActiveScreen}) => {
     const addSongToPlaylist = async (playlistId) => {
         const songId = currentSong._id;
 
-        const payload = {playlistId, songId};
+        const payload = { playlistId, songId };
         const response = await makeAuthenticatedPOSTRequest(
             "/playlist/add/song",
             payload
         );
-        if(response._id){
+        if (response._id) {
             setAddToPlaylistModalOpen(false)
         }
     };
