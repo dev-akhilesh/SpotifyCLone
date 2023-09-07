@@ -1,6 +1,6 @@
-import {useState} from "react";
-import {Howl, Howler} from "howler";
-import {Icon} from "@iconify/react";
+import { useState } from "react";
+import { Howl, Howler } from "howler";
+import { Icon } from "@iconify/react";
 import spotify_logo from "../assets/images/spotify_logo_white.svg";
 import IconText from "../components/shared/IconText";
 import TextWithHover from "../components/shared/TextWithHover";
@@ -78,7 +78,7 @@ const Home = () => {
     );
 };
 
-const PlaylistView = ({titleText, cardsData}) => {
+const PlaylistView = ({ titleText, cardsData }) => {
     return (
         <div className="text-white mt-8">
             <div className="text-2xl font-semibold mb-5">{titleText}</div>
@@ -100,7 +100,7 @@ const PlaylistView = ({titleText, cardsData}) => {
     );
 };
 
-const Card = ({title, description, imgUrl}) => {
+const Card = ({ title, description, imgUrl }) => {
     return (
         <div className="bg-black bg-opacity-40 w-1/5 p-4 rounded-lg">
             <div className="pb-4 pt-2">
