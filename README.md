@@ -27,6 +27,7 @@ A Spotify clone built using the MERN stack (MongoDB, Express.js, React.js, Node.
   - [Creating Playlists](#creating-playlists)
   - [Adding Songs to Playlists](#adding-songs-to-playlists)
   - [Viewing Playlists](#viewing-playlists)
+- [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 
 ## Getting Started
@@ -108,7 +109,23 @@ Before you begin, ensure you have met the following requirements:
 
 - View your playlists and listen to the songs within each playlist individually.
 
+## Technologies Used
+
+- **MongoDB**: Database for storing songs, users, and playlists.
+- **Express.js**: Backend framework for handling API requests.
+- **React**: Frontend library for building the user interface.
+- **Node.js**: Runtime environment for the server.
+- **Passport.js**: Authentication middleware.
+- **JSON Web Tokens (JWT)**: Secure authentication.
+- **bcrypt**: Library for hashing passwords.
+- **Mongoose**: MongoDB object modeling for Node.js.
+- **Tailwind CSS**: A utility-first CSS framework for styling the application.
+- **React Cookie**: For managing cookies in the React application.
+- **React Router DOM**: Routing for single-page applications.
+- **Howler**: JavaScript library for audio playback.
+- **Cloudinary**: Cloud-based image and video management for uploading and storing media files.
+- **Iconify**: A platform-agnostic icon framework for adding icons to the user interface.
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and create a pull request. Please ensure your code follows the project's coding standards.
-
