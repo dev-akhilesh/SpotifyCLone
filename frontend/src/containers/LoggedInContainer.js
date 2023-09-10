@@ -179,7 +179,7 @@ const LoggedInContainer = ({ children, curActiveScreen }) => {
                             <div className="w-1/3 flex justify-around h-full items-center">
                                 <TextWithHover displayText={"Upload Song"} />
                                 <div className="bg-white w-10 h-10 flex items-center justify-center rounded-full font-semibold cursor-pointer">
-                                    AC
+                                    AT
                                 </div>
                             </div>
                         </div>
