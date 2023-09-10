@@ -28,7 +28,6 @@ A Spotify clone built using the MERN stack (MongoDB, Express.js, React.js, Node.
   - [Adding Songs to Playlists](#adding-songs-to-playlists)
   - [Viewing Playlists](#viewing-playlists)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
@@ -51,35 +50,35 @@ Before you begin, ensure you have met the following requirements:
 2. Install server dependencies:
 
    ```bash
-   cd server
+   cd backend
    npm install
    ```
 
 3. Install client dependencies:
 
    ```bash
-   cd ../client
+   cd frontend
    npm install
    ```
 
-4. Create a `.env` file in the server directory and set the following environment variables:
+4. Create a `.env` file in the backend directory and set the following environment variables:
 
    ```env
-   MONGO_URI=your-mongodb-connection-string
-   JWT_SECRET=your-secret-key
+   MONGO_PASSWORD=your-mongodb-connection-string
+   SECRET_KEY_PASSPORT=your-secret-key
    ```
 
 5. Start the server:
 
    ```bash
-   cd ../server
-   npm start
+   cd ../backend
+   npm server
    ```
 
 6. Start the client:
 
    ```bash
-   cd ../client
+   cd ../frontend
    npm start
    ```
 
@@ -87,7 +86,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Authentication
 
-- Sign up or log in using Passport.js to access the full functionality of the Spotify clone.
+- Sign up or log in to access the full functionality of the Spotify clone.
 
 ### Uploading Songs
 
@@ -111,12 +110,5 @@ Before you begin, ensure you have met the following requirements:
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository and create a pull request. Please ensure your code follows the project's coding standards and has appropriate tests.
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and create a pull request. Please ensure your code follows the project's coding standards.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
----
-
-Feel free to customize and enhance this README file according to your project's specific needs. Make sure to replace the placeholder images and URLs with actual project information. Good luck with your Spotify clone project!
