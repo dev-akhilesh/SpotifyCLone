@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import {useState, useEffect} from "react";
 import SingleSongCard from "../components/shared/SingleSongCard";
-import { makeAuthenticatedGETRequest } from "../utils/serverHelpers";
+import {makeAuthenticatedGETRequest} from "../utils/serverHelpers";
 import LoggedInContainer from "../containers/LoggedInContainer";
 
 const MyMusic = () => {
@@ -23,9 +23,10 @@ const MyMusic = () => {
             </div>
             <div className="space-y-3 overflow-auto">
                 {songData.map((item) => {
-                    return <SingleSongCard info={item} playSound={() => { }} />;
+                    return <SingleSongCard key={item.id} info={item} playSound={() => { }} />;
                 })}
             </div>
+
         </LoggedInContainer>
     );
 };

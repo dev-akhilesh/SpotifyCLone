@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { Icon } from "@iconify/react";
+import {useState} from "react";
+import {Icon} from "@iconify/react";
 import TextInput from "../components/shared/TextInput";
 import PasswordInput from "../components/shared/PasswordInput";
-import { Link, useNavigate } from "react-router-dom";
-import { makeUnauthenticatedPOSTRequest } from "../utils/serverHelpers";
-import { useCookies } from "react-cookie";
+import {Link, useNavigate} from "react-router-dom";
+import {makeUnauthenticatedPOSTRequest} from "../utils/serverHelpers";
+import {useCookies} from "react-cookie";
 
 const LoginComponent = () => {
     const [email, setEmail] = useState("");
@@ -13,7 +13,7 @@ const LoginComponent = () => {
     const navigate = useNavigate();
 
     const login = async () => {
-        const data = { email, password };
+        const data = {email, password};
         const response = await makeUnauthenticatedPOSTRequest(
             "/auth/login",
             data
@@ -22,7 +22,7 @@ const LoginComponent = () => {
             const token = response.token;
             const date = new Date();
             date.setDate(date.getDate() + 30);
-            setCookie("token", token, { path: "/", expires: date });
+            setCookie("token", token, {path: "/", expires: date});
             alert("Success");
             navigate("/home");
         } else {
