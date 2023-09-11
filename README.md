@@ -11,9 +11,17 @@ A Spotify clone built using the MERN stack (MongoDB, Express.js, React.js, Node.
   - Listen to songs with play/pause functionality.
   - Search for songs by title.
 - Playlist Management:
+
   - Create and manage playlists.
   - Add songs to playlists.
   - View individual playlists.
+
+  
+## Deployment
+
+- **Frontend**: The frontend of this Spotify clone is deployed on Vercel. You can access it using the following link: [Spotify Clone Frontend](https://your-frontend-vercel-link.com).
+
+- **Backend**: The backend of this Spotify clone is deployed on Render. You can access it using the following link: [Spotify Clone Backend](https://your-backend-render-link.com).
 
 ## Table of Contents
 
