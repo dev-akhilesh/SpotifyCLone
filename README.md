@@ -1,6 +1,6 @@
 # Spotify Clone
 
-![Spotify Clone](https://your-image-url-here.com)
+![Spotify Clone](./Images/home.png)
 
 A Spotify clone built using the MERN stack (MongoDB, Express.js, React.js, Node.js), with the following features:
 
