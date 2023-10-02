@@ -55,7 +55,6 @@ passport.use(new JwtStrategy(opts, function (jwt_payload, done) {
 }));
 
 
-
 app.get('/', (req, res) => {
     res.send("Hello, world!");
 })
