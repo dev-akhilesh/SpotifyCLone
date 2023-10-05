@@ -6,11 +6,15 @@ A Spotify clone built using the MERN stack (MongoDB, Express.js, React.js, Node.
 
 - User Authentication:
   - Signup and login using Passport.js and JWT.
+
 - Song Management:
+
   - Upload songs to the platform.
   - Listen to songs with play/pause functionality.
   - Search for songs by title.
+
 - Playlist Management:
+
   - Create and manage playlists.
   - Add songs to playlists.
   - View individual playlists.
