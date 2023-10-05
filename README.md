@@ -11,7 +11,6 @@ A Spotify clone built using the MERN stack (MongoDB, Express.js, React.js, Node.
   - Listen to songs with play/pause functionality.
   - Search for songs by title.
 - Playlist Management:
-
   - Create and manage playlists.
   - Add songs to playlists.
   - View individual playlists.
