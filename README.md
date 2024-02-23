@@ -22,9 +22,9 @@ A Spotify clone built using the MERN stack (MongoDB, Express.js, React.js, Node.
   
 ## Deployment
 
-- **Frontend**: The frontend of this Spotify clone is deployed on Vercel. You can access it using the following link: [Spotify Clone Frontend](https://your-frontend-vercel-link.com).
+- **Frontend**: The frontend of this Spotify clone is deployed on Vercel. You can access it using the following link: [Spotify Clone Frontend](https://spotifyclone-frontend.vercel.app/login).
 
-- **Backend**: The backend of this Spotify clone is deployed on Render. You can access it using the following link: [Spotify Clone Backend](https://your-backend-render-link.com).
+- **Backend**: The backend of this Spotify clone is deployed on Render. You can access it using the following link: [Spotify Clone Backend](https://spotifyclone-f2ek.onrender.com).
 
 ## Table of Contents
 
